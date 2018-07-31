@@ -1,0 +1,52 @@
+html {
+    background: #e4e595;
+    color: #36473d;
+    font-family: fantasy;
+}
+
+body {
+    margin: 4vw;
+}
+
+#overlay {
+    background-color: black;
+    opacity: .8;
+    height: 100%;
+    width: 100vw;
+    position: fixed;
+    left: 0;
+    top: 0;
+    text-align: center;
+    color: #adc340;
+    font-size: 30px;
+    font-weight: 600;
+    text-shadow: -2px 1px #548039;
+}
+
+.center {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 100px;
+}
+
+canvas {
+    width: 92vw;
+    border: 7px inset #adc340;
+}
+
+.status {
+    font-size: 26px;
+}
+
+#level {
+    float: left;
+}
+
+#treasure {
+    float: right;
+}

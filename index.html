@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+    <head>
+        <title>OGA Jam #2</title>
+        <script src="https://ondras.github.io/rot.js/rot.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="overlay" onclick="fadeOverlay()">
+            <div class="center">Click To Begin</div>
+        </div>
+        <audio id="sound-cave-theme" src="./sounds/cave-theme.mp3" loop></audio>
+        <audio id="sound-treasure" src="./sounds/treasure.wav"></audio>
+        <audio id="sound-decline" src="./sounds/decline.wav"></audio>
+        <audio id="sound-stepdirt_1" src="./sounds/steps/stepdirt_1.wav"></audio>
+        <audio id="sound-stepdirt_2" src="./sounds/steps/stepdirt_2.wav"></audio>
+        <audio id="sound-stepdirt_3" src="./sounds/steps/stepdirt_3.wav"></audio>
+        <audio id="sound-stepdirt_4" src="./sounds/steps/stepdirt_4.wav"></audio>
+
+        <h1>Treasure Hunt</h1>
+        <div class="status">
+            <span id="level">Level: <span id="level-value">1</span></span>
+            <span id="treasure">Treasure: <span id="treasure-value">0</span></span>
+        </div>
+    </body>
+
+    <script src="game.js"></script>
+    <script>
+        var fadeOverlay = function() {
+            document.getElementById('overlay').style.display = 'none';
+            loadAudio();
+        }
+
+        var loadAudio = function() {
+            var audio = document.getElementById('sound-cave-theme');
+            audio.play();
+        }
+    </script>
+</html>
